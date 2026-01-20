@@ -55,7 +55,7 @@ export async function codeSnippet(prompt: string): Promise<string> {
     
     const genAI = new GoogleGenerativeAI(apiKey);
     
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "models/gemini-flash-lite-latest" });
 
     const chat = model.startChat({
       history: chatHistory,
